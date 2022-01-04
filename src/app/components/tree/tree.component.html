@@ -1,0 +1,6 @@
+<div id="tree" #tree></div>
+
+<div *ngIf="isAdd">
+    <input type="text" [(ngModel)]="newItemString">
+    <button type="button" class="collapsible" [disabled]="newItemString == ''" (click)="save()">Save</button>
+</div>
